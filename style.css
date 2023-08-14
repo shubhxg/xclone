@@ -11,6 +11,7 @@
 :root {
   --blue: #1d9bf0;
   --gray-border: #2f3336;
+  --gray-dark-border: #161818;
   --gray: #828388;
   --text-color: #dbddde;
 }
@@ -65,7 +66,7 @@ header {
 
 .following-tabs-container {
   font-size: 1rem;
-  border-top: 1px solid #161818;
+  border-top: 1px solid var(--gray-dark-border)
 }
 
 .tab1,
@@ -75,7 +76,7 @@ header {
 
 .tab1 span {
   cursor: pointer;
-  padding-bottom: 1rem;
+  padding-bottom: 1.15rem;
   border-bottom: 3px solid var(--blue);
 }
 
@@ -97,31 +98,30 @@ header {
 }
 
 .post-container {
-  padding-top: 0.4rem;
+  padding: 0.5rem 0 0.8rem 0;
   width: 100%;
+  border-bottom: 1px solid var(--gray-dark-border);
 }
 
 .post-pfp-container {
   display: block;
-  min-width: 50px;
-  height: 50px;
+  min-width: 40px;
+  height: 40px;
   background: url("https://pbs.twimg.com/profile_images/1597246024522891264/HC5EAQDX_400x400.jpg");
   background-size: cover;
   border-radius: 50%;
-  margin: 0.4rem 0.8rem;
+  margin: 0.4rem 0.6rem;
 }
 
 .post-text-container {
-  margin-right: 0.8rem;
+  padding-right: 1rem;
   display: inline-block;
 }
 
-.post-text-container span {
-  font-size: 1rem;
-}
-
 .user-handle {
+  font-size: 0.9rem;
   padding-left: 4px;
+  padding-right: 0.3rem;
   color: var(--gray);
   font-weight: 400;
   overflow: hidden;
@@ -129,10 +129,17 @@ header {
   white-space: nowrap;
 }
 
+.post-time {
+  color: var(--gray);
+  font-weight: 400;
+  padding-right: 0.3rem;
+}
+
 .post-username-container {
   display: flex;
   justify-content: start;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .verified {
@@ -145,6 +152,21 @@ header {
   font-size: 1rem;
   font-weight: 400;
   color: var(--text-color);
+  word-spacing: -1px;
+}
+
+.post-stats-container {
+  text-align: center;
+  max-width: 600px;
+  margin-top: 0.5rem;
+}
+
+.stats-span {
+  color: var(--gray);
+  padding-left: 0.1rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
 }
 
 /* media queries-------------------------------------  */
