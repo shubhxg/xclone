@@ -52,6 +52,8 @@ header {
   border-bottom: 1px solid var(--gray-border);
   height: 55px;
   background-color: black;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(30px);
 }
 
 .feed { 
@@ -78,7 +80,7 @@ header {
 
 .following-tabs-container {
   font-size: 1rem;
-  border-top: 1px solid var(--gray-dark-border)
+  border-top: 1px solid var(--gray-dark-border);
 }
 
 .tab1,
