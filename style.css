@@ -103,6 +103,7 @@ header {
 
 .tabs-section {
   width: 100%;
+  cursor: pointer;
   height: 60px;
   position: fixed;
   background-color: black;
@@ -238,7 +239,7 @@ h3 {
   box-shadow: 0px 0px 100px 10px var(--blue);
 }
 
-.retweet-icon:hover, .retweet-icon ~ span:hover, .search-icon:hover {
+.retweet-icon:hover, .retweet-icon ~ span:hover, .search-icon:hover, .community-icon:hover {
   fill: var(--green);
   color: var(--green);
   box-shadow: 0px 0px 120px 15px var(--green);
