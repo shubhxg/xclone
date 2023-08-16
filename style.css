@@ -11,9 +11,12 @@
 :root {
   --blue: #1d9bf0;
   --gray-border: #2f3336;
-  --gray-dark-border: #161818;
+  --gray-dark-border: #202222;
   --gray: #828388;
   --text-color: #e2e5e6;
+  --green: #00ba7c;
+  --red:rgb(255, 92, 92);
+  --orange:  orange;
 }
 
 /* flex classes------------------------ */
@@ -195,7 +198,89 @@ span.hash {
   max-height: 400px;
 }
 
+.new-post-button {
+  background-color: var(--blue);
+  display: inline;
+  padding: 1rem;
+  position: fixed;
+  bottom: 70px;
+  border-radius: 50%;
+  right: 25px;
+}
+
+.load-more {
+  text-align: center;
+  padding: 1rem;
+}
+
+.load-more:hover {
+  background-color: #101010;
+  cursor: pointer;
+}
+
+h3:hover {
+  color: var(--blue);
+}
+
+h3 {
+  margin: 0 auto;
+}
+
+/* hover states --------------------------------------- */
+
+.new-post-button:hover {
+  box-shadow: 0px 0px 100px 3px var(--blue);
+}
+
+.comments-icon:hover, .comments-icon ~ span:hover {
+  fill: var(--blue);
+  color: var(--blue);
+  box-shadow: 0px 0px 100px 10px var(--blue);
+}
+
+.retweet-icon:hover, .retweet-icon ~ span:hover {
+  fill: var(--green);
+  color: var(--green);
+  box-shadow: 0px 0px 120px 15px var(--green);
+}
+
+.like-icon:hover, .like-icon ~ span:hover {
+  fill: var(--red);
+  color: var(--red);
+  box-shadow: 0px 0px 70px 5px var(--red);
+}
+
+.views-icon:hover, .views-icon ~ span:hover {
+  fill: var(--blue);
+  color: var(--blue);
+  box-shadow: 0px 0px 70px 5px var(--blue);
+}
+
+.share-icon:hover {
+  fill:var(--orange);
+  box-shadow: 0px 0px 70px 5px orange;
+}
+
+.post-text-container:hover {
+  cursor: pointer;
+}
+
+.post-stats-container:hover {
+  border-radius: 6px;
+  background-color: #101010;
+}
+
+
 /* media queries-------------------------------------  */
+
+@media (min-width: 780px) {
+  .post-text-container p, .post-username-container span {
+    font-size: 1rem;
+  }
+}
+
+
+
 @media (min-width: 1024px) {
   main {
     height: 100vh;
