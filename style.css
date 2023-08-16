@@ -232,28 +232,22 @@ h3 {
   box-shadow: 0px 0px 100px 3px var(--blue);
 }
 
-.comments-icon:hover, .comments-icon ~ span:hover {
+.comments-icon:hover, .comments-icon ~ span:hover, .views-icon:hover, .home-icon:hover, .msg-icon:hover {
   fill: var(--blue);
   color: var(--blue);
   box-shadow: 0px 0px 100px 10px var(--blue);
 }
 
-.retweet-icon:hover, .retweet-icon ~ span:hover {
+.retweet-icon:hover, .retweet-icon ~ span:hover, .search-icon:hover {
   fill: var(--green);
   color: var(--green);
   box-shadow: 0px 0px 120px 15px var(--green);
 }
 
-.like-icon:hover, .like-icon ~ span:hover {
+.like-icon:hover, .like-icon ~ span:hover, .noti-icon:hover {
   fill: var(--red);
   color: var(--red);
   box-shadow: 0px 0px 70px 5px var(--red);
-}
-
-.views-icon:hover, .views-icon ~ span:hover {
-  fill: var(--blue);
-  color: var(--blue);
-  box-shadow: 0px 0px 70px 5px var(--blue);
 }
 
 .share-icon:hover {
