@@ -8,12 +8,18 @@
   </head>
   <body>
     <div class="new-post-button">
-        <svg class="verified" viewBox="0 -2 24 24" width="28" height="24" fill="white">
-          <path
-            d="M23 3c-6.62-.1-10.38 2.421-13.05 6.03C7.29 12.61 6 17.331 6 22h2c0-1.007.07-2.012.19-3H12c4.1 0 7.48-3.082 7.94-7.054C22.79 10.147 23.17 6.359 23 3zm-7 8h-1.5v2H16c.63-.016 1.2-.08 1.72-.188C16.95 15.24 14.68 17 12 17H8.55c.57-2.512 1.57-4.851 3-6.78 2.16-2.912 5.29-4.911 9.45-5.187C20.95 8.079 19.9 11 16 11zM4 9V6H1V4h3V1h2v3h3v2H6v3H4z"
-          ></path>
-        </svg>
-      </div>
+      <svg
+        class="verified"
+        viewBox="0 -2 24 24"
+        width="28"
+        height="24"
+        fill="white"
+      >
+        <path
+          d="M23 3c-6.62-.1-10.38 2.421-13.05 6.03C7.29 12.61 6 17.331 6 22h2c0-1.007.07-2.012.19-3H12c4.1 0 7.48-3.082 7.94-7.054C22.79 10.147 23.17 6.359 23 3zm-7 8h-1.5v2H16c.63-.016 1.2-.08 1.72-.188C16.95 15.24 14.68 17 12 17H8.55c.57-2.512 1.57-4.851 3-6.78 2.16-2.912 5.29-4.911 9.45-5.187C20.95 8.079 19.9 11 16 11zM4 9V6H1V4h3V1h2v3h3v2H6v3H4z"
+        ></path>
+      </svg>
+    </div>
     <main>
       <!-- first section -->
       <section class="feed">
@@ -39,6 +45,33 @@
             </div>
           </div>
         </header>
+
+        <!-- for bigger screens -->
+        <div class="home">
+          <div class="home-container">
+          <h1>Home</h1>
+          <img
+            src="https://pbs.twimg.com/profile_images/1620106569236246529/uRZcbsLg_400x400.jpg"
+            alt="pfp"
+            class="pfp"
+          />
+          <img
+            src="https://seeklogo.com/images/T/twitter-x-logo-101C7D2420-seeklogo.com.png?v=638258077300000000"
+            alt="logo"
+            class="logo"
+          />
+        </div>
+        <div class="header">
+          <div class="home-tabs flex">
+            <div class="tab1">
+              <span>For you</span>
+            </div>
+            <div class="tab2">
+              <span>Following</span>
+            </div>
+          </div>
+        </div>
+        </div>
 
         <!-- feed posts start here -->
         <div class="post-container flex-start">
@@ -78,7 +111,12 @@
             </p>
             <div class="post-stats-container flex-a">
               <div class="comments flex blhv">
-                <svg class="comments-icon" viewBox="0 0 24 24" width="18" fill="grey">
+                <svg
+                  class="comments-icon"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="grey"
+                >
                   <path
                     d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z"
                   ></path>
@@ -86,7 +124,12 @@
                 <span class="stats-span">69</span>
               </div>
               <div class="retweet flex">
-                <svg class="retweet-icon" viewBox="0 0 24 24" width="18" fill="grey">
+                <svg
+                  class="retweet-icon"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="grey"
+                >
                   <path
                     d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"
                   ></path>
@@ -94,7 +137,12 @@
                 <span class="stats-span">99</span>
               </div>
               <div class="like flex">
-                <svg class="like-icon" viewBox="0 0 24 24" width="18" fill="grey">
+                <svg
+                  class="like-icon"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="grey"
+                >
                   <path
                     d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"
                   ></path>
@@ -102,7 +150,12 @@
                 <span class="stats-span">420</span>
               </div>
               <div class="views flex">
-                <svg class="views-icon" viewBox="0 0 24 24" width="18" fill="grey">
+                <svg
+                  class="views-icon"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="grey"
+                >
                   <path
                     d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"
                   ></path>
@@ -110,7 +163,12 @@
                 <span class="stats-span">69420</span>
               </div>
               <div class="share">
-                <svg class="share-icon" viewBox="0 0 24 24" width="18" fill="grey">
+                <svg
+                  class="share-icon"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="grey"
+                >
                   <path
                     d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z"
                   ></path>
@@ -158,7 +216,12 @@
             </p>
             <div class="post-stats-container flex-a">
               <div class="comments flex">
-                <svg class="comments-icon" viewBox="0 0 24 24" width="18" fill="grey">
+                <svg
+                  class="comments-icon"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="grey"
+                >
                   <path
                     d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z"
                   ></path>
@@ -166,7 +229,12 @@
                 <span class="stats-span">5</span>
               </div>
               <div class="retweet flex">
-                <svg class="retweet-icon" viewBox="0 0 24 24" width="18" fill="grey">
+                <svg
+                  class="retweet-icon"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="grey"
+                >
                   <path
                     d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"
                   ></path>
@@ -174,7 +242,12 @@
                 <span class="stats-span">9</span>
               </div>
               <div class="like flex">
-                <svg class="like-icon" viewBox="0 0 24 24" width="18" fill="grey">
+                <svg
+                  class="like-icon"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="grey"
+                >
                   <path
                     d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"
                   ></path>
@@ -182,7 +255,12 @@
                 <span class="stats-span">40</span>
               </div>
               <div class="views flex">
-                <svg class="views-icon" viewBox="0 0 24 24" width="18" fill="grey">
+                <svg
+                  class="views-icon"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="grey"
+                >
                   <path
                     d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"
                   ></path>
@@ -190,7 +268,12 @@
                 <span class="stats-span">318</span>
               </div>
               <div class="share">
-                <svg class="share-icon" viewBox="0 0 24 24" width="18" fill="grey">
+                <svg
+                  class="share-icon"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="grey"
+                >
                   <path
                     d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z"
                   ></path>
@@ -233,7 +316,12 @@
             />
             <div class="post-stats-container flex-a">
               <div class="comments flex">
-                <svg class="comments-icon" viewBox="0 0 24 24" width="18" fill="grey">
+                <svg
+                  class="comments-icon"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="grey"
+                >
                   <path
                     d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z"
                   ></path>
@@ -241,7 +329,12 @@
                 <span class="stats-span">201</span>
               </div>
               <div class="retweet flex">
-                <svg class="retweet-icon" viewBox="0 0 24 24" width="18" fill="grey">
+                <svg
+                  class="retweet-icon"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="grey"
+                >
                   <path
                     d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"
                   ></path>
@@ -249,7 +342,12 @@
                 <span class="stats-span">69K</span>
               </div>
               <div class="like flex">
-                <svg class="like-icon" viewBox="0 0 24 24" width="18" fill="grey">
+                <svg
+                  class="like-icon"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="grey"
+                >
                   <path
                     d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"
                   ></path>
@@ -257,7 +355,12 @@
                 <span class="stats-span">699K</span>
               </div>
               <div class="views flex">
-                <svg class="views-icon" viewBox="0 0 24 24" width="18" fill="grey">
+                <svg
+                  class="views-icon"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="grey"
+                >
                   <path
                     d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"
                   ></path>
@@ -265,7 +368,12 @@
                 <span class="stats-span">42M</span>
               </div>
               <div class="share">
-                <svg class="share-icon" viewBox="0 0 24 24" width="18" fill="grey">
+                <svg
+                  class="share-icon"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="grey"
+                >
                   <path
                     d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z"
                   ></path>
@@ -299,7 +407,12 @@
             />
             <div class="post-stats-container flex-a">
               <div class="comments flex">
-                <svg class="comments-icon" viewBox="0 0 24 24" width="18" fill="grey">
+                <svg
+                  class="comments-icon"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="grey"
+                >
                   <path
                     d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z"
                   ></path>
@@ -307,7 +420,12 @@
                 <span class="stats-span">19</span>
               </div>
               <div class="retweet flex">
-                <svg class="retweet-icon" viewBox="0 0 24 24" width="18" fill="grey">
+                <svg
+                  class="retweet-icon"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="grey"
+                >
                   <path
                     d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"
                   ></path>
@@ -315,7 +433,12 @@
                 <span class="stats-span">69</span>
               </div>
               <div class="like flex">
-                <svg class="like-icon" viewBox="0 0 24 24" width="18" fill="grey">
+                <svg
+                  class="like-icon"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="grey"
+                >
                   <path
                     d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"
                   ></path>
@@ -323,7 +446,12 @@
                 <span class="stats-span">42</span>
               </div>
               <div class="views flex">
-                <svg class="views-icon" viewBox="0 0 24 24" width="18" fill="grey">
+                <svg
+                  class="views-icon"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="grey"
+                >
                   <path
                     d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"
                   ></path>
@@ -331,7 +459,12 @@
                 <span class="stats-span">969</span>
               </div>
               <div class="share">
-                <svg class="share-icon" viewBox="0 0 24 24" width="18" fill="grey">
+                <svg
+                  class="share-icon"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="grey"
+                >
                   <path
                     d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z"
                   ></path>
@@ -383,7 +516,12 @@
             />
             <div class="post-stats-container flex-a">
               <div class="comments flex">
-                <svg class="comments-icon" viewBox="0 0 24 24" width="18" fill="grey">
+                <svg
+                  class="comments-icon"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="grey"
+                >
                   <path
                     d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z"
                   ></path>
@@ -391,7 +529,12 @@
                 <span class="stats-span">169</span>
               </div>
               <div class="retweet flex">
-                <svg class="retweet-icon" viewBox="0 0 24 24" width="18" fill="grey">
+                <svg
+                  class="retweet-icon"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="grey"
+                >
                   <path
                     d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"
                   ></path>
@@ -399,7 +542,12 @@
                 <span class="stats-span">307</span>
               </div>
               <div class="like flex">
-                <svg class="like-icon" viewBox="0 0 24 24" width="18" fill="grey">
+                <svg
+                  class="like-icon"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="grey"
+                >
                   <path
                     d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"
                   ></path>
@@ -407,7 +555,12 @@
                 <span class="stats-span">1071</span>
               </div>
               <div class="views flex">
-                <svg class="views-icon" viewBox="0 0 24 24" width="18" fill="grey">
+                <svg
+                  class="views-icon"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="grey"
+                >
                   <path
                     d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"
                   ></path>
@@ -415,7 +568,12 @@
                 <span class="stats-span">1.1M</span>
               </div>
               <div class="share">
-                <svg class="share-icon" viewBox="0 0 24 24" width="18" fill="grey">
+                <svg
+                  class="share-icon"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="grey"
+                >
                   <path
                     d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z"
                   ></path>
@@ -456,7 +614,12 @@
             </div>
             <div class="post-stats-container flex-a">
               <div class="comments flex">
-                <svg class="comments-icon" viewBox="0 0 24 24" width="18" fill="grey">
+                <svg
+                  class="comments-icon"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="grey"
+                >
                   <path
                     d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z"
                   ></path>
@@ -464,7 +627,12 @@
                 <span class="stats-span">189</span>
               </div>
               <div class="retweet flex">
-                <svg class="retweet-icon" viewBox="0 0 24 24" width="18" fill="grey">
+                <svg
+                  class="retweet-icon"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="grey"
+                >
                   <path
                     d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"
                   ></path>
@@ -472,7 +640,12 @@
                 <span class="stats-span">14</span>
               </div>
               <div class="like flex">
-                <svg class="like-icon" viewBox="0 0 24 24" width="18" fill="grey">
+                <svg
+                  class="like-icon"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="grey"
+                >
                   <path
                     d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"
                   ></path>
@@ -480,7 +653,12 @@
                 <span class="stats-span">1007</span>
               </div>
               <div class="views flex">
-                <svg class="views-icon" viewBox="0 0 24 24" width="18" fill="grey">
+                <svg
+                  class="views-icon"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="grey"
+                >
                   <path
                     d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"
                   ></path>
@@ -488,7 +666,12 @@
                 <span class="stats-span">478K</span>
               </div>
               <div class="share">
-                <svg class="share-icon" viewBox="0 0 24 24" width="18" fill="grey">
+                <svg
+                  class="share-icon"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="grey"
+                >
                   <path
                     d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z"
                   ></path>
@@ -535,7 +718,12 @@
             />
             <div class="post-stats-container flex-a">
               <div class="comments flex">
-                <svg class="comments-icon" viewBox="0 0 24 24" width="18" fill="grey">
+                <svg
+                  class="comments-icon"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="grey"
+                >
                   <path
                     d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z"
                   ></path>
@@ -543,7 +731,12 @@
                 <span class="stats-span">19</span>
               </div>
               <div class="retweet flex">
-                <svg class="retweet-icon" viewBox="0 0 24 24" width="18" fill="grey">
+                <svg
+                  class="retweet-icon"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="grey"
+                >
                   <path
                     d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"
                   ></path>
@@ -551,7 +744,12 @@
                 <span class="stats-span">69</span>
               </div>
               <div class="like flex">
-                <svg class="like-icon" viewBox="0 0 24 24" width="18" fill="grey">
+                <svg
+                  class="like-icon"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="grey"
+                >
                   <path
                     d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"
                   ></path>
@@ -559,7 +757,12 @@
                 <span class="stats-span">42</span>
               </div>
               <div class="views flex">
-                <svg class="views-icon" viewBox="0 0 24 24" width="18" fill="grey">
+                <svg
+                  class="views-icon"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="grey"
+                >
                   <path
                     d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"
                   ></path>
@@ -567,7 +770,12 @@
                 <span class="stats-span">969</span>
               </div>
               <div class="share">
-                <svg class="share-icon" viewBox="0 0 24 24" width="18" fill="grey">
+                <svg
+                  class="share-icon"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="grey"
+                >
                   <path
                     d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z"
                   ></path>
@@ -599,7 +807,12 @@
           </svg>
         </div>
         <div class="community tabs-item">
-          <svg class="community-icon" viewBox="0 0 24 24" width="24" fill="white">
+          <svg
+            class="community-icon"
+            viewBox="0 0 24 24"
+            width="24"
+            fill="white"
+          >
             <path
               d="M7.501 19.917L7.471 21H.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977.963 0 1.95.212 2.87.672-.444.478-.851 1.03-1.212 1.656-.507-.204-1.054-.329-1.658-.329-2.767 0-4.57 2.223-4.938 6.004H7.56c-.023.302-.05.599-.059.917zm15.998.056L23.528 21H9.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977s6.816 2.358 7 8.977zM21.437 19c-.367-3.781-2.17-6.004-4.938-6.004s-4.57 2.223-4.938 6.004h9.875zm-4.938-9c-.799 0-1.527-.279-2.116-.73-.836-.64-1.384-1.638-1.384-2.77 0-1.93 1.567-3.5 3.5-3.5s3.5 1.57 3.5 3.5c0 1.132-.548 2.13-1.384 2.77-.589.451-1.317.73-2.116.73zm-1.5-3.5c0 .827.673 1.5 1.5 1.5s1.5-.673 1.5-1.5-.673-1.5-1.5-1.5-1.5.673-1.5 1.5zM7.5 3C9.433 3 11 4.57 11 6.5S9.433 10 7.5 10 4 8.43 4 6.5 5.567 3 7.5 3zm0 2C6.673 5 6 5.673 6 6.5S6.673 8 7.5 8 9 7.327 9 6.5 8.327 5 7.5 5z"
             ></path>
