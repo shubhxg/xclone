@@ -273,6 +273,7 @@ h3 {
   }
 
   .home {
+    z-index: 1;
     background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(5px);
   }
@@ -455,6 +456,59 @@ h3 {
     font-weight:400;
     color: #71767b;
   }
+
+  .create-post-container {
+    cursor: pointer;
+    position: relative;
+    border-bottom: 1px solid var(--gray-border);
+  }
+
+  .create-newpost input {
+    background-color: #000;
+    border: none;
+    width: 80%;
+    border-radius: 10px;
+    color: rgb(207, 207, 207);
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    margin-left: 1rem;
+  }
+
+  .create-newpost img {
+    width: 40px;
+    border-radius: 50%;
+    height: 40px;
+  }
+
+  .create-newpost {
+    margin: 1rem 0;
+    margin-left: 1rem;
+  }
+
+  .create-post-icons {
+    display: flex;
+    gap: 1rem;
+    margin-left: 5rem;
+  }
+
+  .icons-post-wrapper {
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+
+  .postbtn {
+    margin-left: 20rem;
+    position: absolute;
+    right: 2rem;
+    bottom: 0.6rem;
+    width: 70px;
+    /* transition animation */
+    background-color: var(--blue);
+    transition: background-color 0.4s; 
+    background-color: #0f4e78;
+    color: rgb(167, 167, 167);
+  }
 }
 
 @media (max-width: 1024px) {
@@ -467,6 +521,10 @@ h3 {
   }
 
   .right {
+    display: none;
+  }
+
+  .create-post-container {
     display: none;
   }
 }
@@ -531,4 +589,11 @@ h3 {
 
 .container-explore:hover {
   background-color: #212121;
+}
+
+.postbtn:hover {
+  background-color: var(--blue);
+  color: white;
+  transition-duration: 0.2s;
+  box-shadow: 0 0 20px 1px var(--blue);
 }
