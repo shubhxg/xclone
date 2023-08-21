@@ -355,6 +355,7 @@ h3 {
 
   .feed {
     margin-left: 400px;
+    min-width: 390px;
     border-right: 1px solid var(--gray-border);
     border-left: 1px solid var(--gray-border);
     order: 1;
