@@ -1,0 +1,16 @@
+/* flex classes------------------------ */
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-a {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+}

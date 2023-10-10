@@ -4,21 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
   overscroll-behavior: none;
-}
-
-/* color variables---------------------- */
-:root {
-  --blue: #1d9bf0;
-  --gray-containers: #202327;
-  --gray-border: #2f3336;
-  --gray-dark-border: #202222;
-  --gray: #828388;
-  --text-color: #d9dbdc;
-  --green: #00ba7c;
-  --red: rgb(255, 92, 92);
-  --orange: orange;
 }
 
 /* flex classes------------------------ */
@@ -35,22 +21,108 @@
 
 .flex-start {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
+/* hover states --------------------------------------------------------- */
+.tab2 span:hover {
+  color: #acaeb6;
+}
+
+.load-more:hover {
+  background-color: #101010;
+  cursor: pointer;
+}
+
+.new-post-button:hover {
+  box-shadow: 0px 0px 100px 3px #1d9bf0;
+}
+
+.comments-icon:hover,
+.comments-icon ~ span:hover,
+.views-icon:hover,
+.home-icon:hover,
+.msg-icon:hover {
+  fill: #1d9bf0;
+  color: #1d9bf0;
+  box-shadow: 0px 0px 100px 10px #1d9bf0;
+}
+
+.retweet-icon:hover,
+.retweet-icon ~ span:hover,
+.search-icon:hover,
+.community-icon:hover {
+  fill: #00ba7c;
+  color: #00ba7c;
+  box-shadow: 0px 0px 120px 15px #00ba7c;
+}
+
+.like-icon:hover,
+.like-icon ~ span:hover,
+.noti-icon:hover {
+  fill: rgb(255, 92, 92);
+  color: rgb(255, 92, 92);
+  box-shadow: 0px 0px 70px 5px rgb(255, 92, 92);
+}
+
+.share-icon:hover {
+  fill: orange;
+  box-shadow: 0px 0px 70px 5px orange;
+}
+
+.post-text-container:hover {
+  cursor: pointer;
+}
+
+.post-stats-container:hover {
+  border-radius: 6px;
+  background-color: #101010;
+}
+
+.container-explore:hover {
+  background-color: #212121;
+}
+
+.postbtn:hover,
+.leftbutton:hover,
+.subscribe:hover {
+  background-color: #1d9bf0;
+  color: white;
+  transition-duration: 0.2s;
+  box-shadow: 0 0 20px 0.1px #1d9bf0;
+}
+
+.tabs-item:hover {
+  background-color: #202222;
+}
+
+span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* tablets-------------------------------------------------------- */
+@media (min-width: 780px) {
+  .post-text-container p,
+  .post-username-container span {
+    font-size: 1rem;
+  }
+}
 body {
   color: white;
   font-weight: 700;
+  scroll-behavior: smooth;
   background-color: #000;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
-  border-bottom: 1px solid var(--gray-border);
+  border-bottom: 1px solid #2f3336;
   height: 55px;
   background-color: black;
   background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
   position: sticky;
   top: 0px;
 }
@@ -79,7 +151,7 @@ header {
 
 .following-tabs-container {
   font-size: 1rem;
-  border-top: 1px solid var(--gray-dark-border);
+  border-top: 1px solid #202222;
 }
 
 .tab1,
@@ -90,16 +162,12 @@ header {
 .tab1 span {
   cursor: pointer;
   padding-bottom: 1.15rem;
-  border-bottom: 3px solid var(--blue);
+  border-bottom: 3px solid #1d9bf0;
 }
 
 .tab2 span {
   cursor: pointer;
-  color: var(--gray);
-}
-
-.tab2 span:hover {
-  color: #acaeb6;
+  color: #828388;
 }
 
 .tabs-section {
@@ -114,7 +182,7 @@ header {
 .post-container {
   padding: 0.5rem 0 0.8rem 0;
   width: 100%;
-  border-bottom: 1px solid var(--gray-dark-border);
+  border-bottom: 1px solid #202222;
 }
 
 .post-pfp-container {
@@ -135,7 +203,7 @@ header {
   font-size: 0.9rem;
   padding-left: 4px;
   padding-right: 0.3rem;
-  color: var(--gray);
+  color: #828388;
   font-weight: 400;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -143,7 +211,7 @@ header {
 }
 
 .post-time {
-  color: var(--gray);
+  color: #828388;
   font-weight: 400;
   padding-right: 0.3rem;
 }
@@ -164,7 +232,7 @@ header {
   padding-top: 2px;
   font-size: 0.95rem;
   font-weight: 400;
-  color: var(--text-color);
+  color: #d9dbdc;
   word-spacing: -1px;
 }
 
@@ -175,7 +243,7 @@ header {
 }
 
 .stats-span {
-  color: var(--gray);
+  color: #828388;
   padding-left: 0.1rem;
   font-size: 0.8rem;
   font-weight: 400;
@@ -184,14 +252,14 @@ header {
 
 .post-images {
   margin-top: 0.5rem;
-  border: 2px solid var(--gray-border);
+  border: 2px solid #2f3336;
   border-radius: 0.8rem;
   width: 100%;
   max-width: 600px;
 }
 
 span.hash {
-  color: var(--blue);
+  color: #1d9bf0;
   cursor: pointer;
 }
 
@@ -201,7 +269,7 @@ span.hash {
 }
 
 .new-post-button {
-  background-color: var(--blue);
+  background-color: #1d9bf0;
   display: inline;
   padding: 1rem;
   position: fixed;
@@ -215,13 +283,8 @@ span.hash {
   padding: 1rem;
 }
 
-.load-more:hover {
-  background-color: #101010;
-  cursor: pointer;
-}
-
 h3:hover {
-  color: var(--blue);
+  color: #1d9bf0;
 }
 
 h3 {
@@ -229,25 +292,14 @@ h3 {
 }
 
 /* media queries-----------------------------------------------------------------  */
-
-/* tablets-------------------------------------------------------- */
-@media (min-width: 780px) {
-  .post-text-container p,
-  .post-username-container span {
-    font-size: 1rem;
-  }
-}
-
 /* big screens------------------------------------------------- */
 @media (min-width: 1024px) {
   .new-post-button {
     display: none;
   }
-
   body {
     display: flex;
   }
-
   .tabs-section h1 {
     font-size: 1.4rem;
     font-weight: 500;
@@ -255,7 +307,6 @@ h3 {
     padding-left: 1rem;
     color: var(--text-color);
   }
-
   .tabs-item {
     margin-bottom: 0.3rem;
     padding: 0.5rem 1.5rem;
@@ -263,13 +314,12 @@ h3 {
     display: flex;
     align-items: center;
   }
-
   main {
+    height: 100vh;
     order: 1;
     display: grid;
     grid-template-columns: 2fr 1fr;
   }
-
   nav {
     width: 400px;
     height: 100vh;
@@ -278,7 +328,6 @@ h3 {
     left: 7rem;
     order: 0;
   }
-
   nav + .leftbutton {
     font-size: 1.2rem;
     position: fixed;
@@ -287,7 +336,6 @@ h3 {
     width: 15rem;
     height: 3.2rem;
   }
-
   .home-icon,
   .search-icon,
   .community-icon,
@@ -299,79 +347,62 @@ h3 {
   .profile-icon {
     width: 28px;
   }
-
   .tabs-section {
     margin-top: 100px;
     flex-direction: column;
     align-items: start;
     width: 200px;
   }
-
-  .home h1 {
-    color: var(--text-color);
-    font-size: 1.4rem;
-    margin: 0.8rem 0.8rem;
-  }
-
   .pfp {
     display: none;
   }
-
   .logo {
     position: absolute;
     width: 40px;
     top: 0px;
     left: -270px;
   }
-
   .header {
     height: 55px;
     background-color: black;
     position: sticky;
     top: 0px;
-    border-bottom: 1px solid var(--gray-border);
+    border-bottom: 1px solid #2f3336;
   }
-
   .home {
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(30px);
+            backdrop-filter: blur(30px);
     padding-top: 0.1rem;
     position: sticky;
     top: 0px;
   }
-
-  .home {
-    z-index: 1;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(30px);
+  .home h1 {
+    color: var(--text-color);
+    font-size: 1.4rem;
+    margin: 0.8rem 0.8rem;
   }
-
   .home-tabs,
   .header {
     background: rgba(0, 0, 0, 0);
   }
-
-  main {
-    height: 100vh;
-  }
-
   .feed {
     margin-left: 400px;
     min-width: 390px;
-    border-right: 1px solid var(--gray-border);
-    border-left: 1px solid var(--gray-border);
+    border-right: 1px solid #2f3336;
+    border-left: 1px solid #2f3336;
     order: 1;
     margin-bottom: 0;
   }
-
   .logo-container,
   .following-tabs-container,
   header {
     display: none;
   }
-
   .right {
     order: 3;
   }
-
   .container-right {
     padding-left: 1.5rem;
     display: flex;
@@ -380,23 +411,20 @@ h3 {
     position: sticky;
     top: -450px;
   }
-
   .container-search {
-    background-color: var(--gray-containers);
+    background-color: #202327;
     width: 23%;
     border-radius: 200px;
     padding-left: 1.5rem;
   }
-
   .search-wrapper {
     padding: 0.5rem 0px;
     width: 100%;
     position: fixed;
     background-color: black;
   }
-
   .search-bar {
-    background-color: var(--gray-containers);
+    background-color: #202327;
     height: 45px;
     color: rgb(191, 191, 191);
     border-radius: 200px;
@@ -407,62 +435,51 @@ h3 {
     padding: 0px 0px 2px 10px;
     cursor: pointer;
   }
-
   .Premium {
     margin-top: 4rem;
   }
-
+  .Premium > h1 {
+    padding-bottom: 0.5rem;
+    color: white;
+    font-size: 1.5vw;
+  }
+  .Premium p {
+    font-weight: 700;
+    font-size: 1vw;
+    color: #d9dbdc;
+  }
   .card {
     padding: 0.8rem 1rem;
     width: 75%;
     background-color: rgb(22, 22, 22);
     border-radius: 1rem;
   }
-
-  .Premium > h1 {
-    padding-bottom: 0.5rem;
-    color: white;
-    font-size: 1.5vw;
-  }
-
-  .Premium p {
-    font-weight: 700;
-    font-size: 1vw;
-    color: var(--text-color);
-  }
-
   .subscribe {
     margin-top: 0.6rem;
     width: 110px;
   }
-
   .explore {
     display: flex;
     flex-direction: column;
     padding: 0.8rem 0;
   }
-
   .explore h1 {
     padding: 0.2rem 0 0.4rem 1.4rem;
   }
-
   .container-explore {
     padding: 1rem 1.4rem;
   }
-
   .container-explore h5 {
     font-size: 1rem;
   }
-
   .container-explore span {
     font-size: 0.8rem;
     font-weight: 400;
     color: gray;
   }
-
   .button {
     cursor: pointer;
-    background-color: var(--blue);
+    background-color: #1d9bf0;
     font-family: inherit;
     border-radius: 100px;
     padding-bottom: 2px;
@@ -472,19 +489,21 @@ h3 {
     font-weight: 700;
     color: white;
   }
-
+  .button.follow {
+    background-color: white;
+    color: black;
+    width: 90px;
+  }
   h6.showmore {
     cursor: pointer;
     font-size: 1rem;
     font-weight: 400;
-    color: var(--blue);
+    color: #1d9bf0;
     padding: 0 0 0.5rem 1rem;
   }
-
   .container-follow {
     margin-top: 1rem;
   }
-
   .container-follow img {
     border-radius: 50%;
     background-repeat: none;
@@ -492,36 +511,29 @@ h3 {
     height: 40px;
     width: 40px;
   }
-
   .container-follow span {
     padding: 0;
   }
-
-  button.follow {
-    background-color: white;
-    color: black;
-    width: 90px;
-  }
-
   .container-terms-of-service {
     display: grid;
     grid-template-columns: 100px 100px 100px;
     gap: 0.4rem;
     padding-left: 1rem;
   }
-
   .container-terms-of-service span {
     font-size: 0.8rem;
     font-weight: 400;
     color: #71767b;
   }
-
   .create-post-container {
     cursor: pointer;
     position: relative;
-    border-bottom: 1px solid var(--gray-border);
+    border-bottom: 1px solid #2f3336;
   }
-
+  .create-newpost {
+    margin: 1rem 0;
+    margin-left: 1rem;
+  }
   .create-newpost input {
     background-color: #000;
     border: none;
@@ -533,29 +545,20 @@ h3 {
     outline: none;
     margin-left: 1rem;
   }
-
   .create-newpost img {
     width: 40px;
     border-radius: 50%;
     height: 40px;
   }
-
-  .create-newpost {
-    margin: 1rem 0;
-    margin-left: 1rem;
-  }
-
   .create-post-icons {
     display: flex;
     gap: 1rem;
     margin-left: 5rem;
   }
-
   .icons-post-wrapper {
     display: inline-block;
     margin-bottom: 1rem;
   }
-
   .postbtn {
     margin-left: 20rem;
     position: absolute;
@@ -563,122 +566,44 @@ h3 {
     bottom: 0.6rem;
     width: 70px;
     /* transition animation */
-    background-color: var(--blue);
+    background-color: #1d9bf0;
     transition: background-color 0.4s;
     background-color: #0f4e78;
     color: rgb(167, 167, 167);
   }
 }
-
 @media (max-width: 1024px) {
   .header-top {
     display: none;
   }
-
   .lists,
   .verify,
   .more-ic,
   .profile-ic {
     display: none;
   }
-
   .leftbutton {
     display: none;
   }
-
   .tabs-section h1 {
     display: none;
   }
-
   .home {
     display: none;
   }
-
   .right {
     display: none;
   }
-
   .create-post-container {
     display: none;
   }
 }
-
 @media (max-width: 420px) {
   .community {
     display: none;
   }
-
   .flex-wrap {
     display: flex;
     flex-wrap: wrap;
   }
-}
-
-/* hover states --------------------------------------------------------- */
-
-.new-post-button:hover {
-  box-shadow: 0px 0px 100px 3px var(--blue);
-}
-
-.comments-icon:hover,
-.comments-icon ~ span:hover,
-.views-icon:hover,
-.home-icon:hover,
-.msg-icon:hover {
-  fill: var(--blue);
-  color: var(--blue);
-  box-shadow: 0px 0px 100px 10px var(--blue);
-}
-
-.retweet-icon:hover,
-.retweet-icon ~ span:hover,
-.search-icon:hover,
-.community-icon:hover {
-  fill: var(--green);
-  color: var(--green);
-  box-shadow: 0px 0px 120px 15px var(--green);
-}
-
-.like-icon:hover,
-.like-icon ~ span:hover,
-.noti-icon:hover {
-  fill: var(--red);
-  color: var(--red);
-  box-shadow: 0px 0px 70px 5px var(--red);
-}
-
-.share-icon:hover {
-  fill: var(--orange);
-  box-shadow: 0px 0px 70px 5px orange;
-}
-
-.post-text-container:hover {
-  cursor: pointer;
-}
-
-.post-stats-container:hover {
-  border-radius: 6px;
-  background-color: #101010;
-}
-
-.container-explore:hover {
-  background-color: #212121;
-}
-
-.postbtn:hover,
-.leftbutton:hover,
-.subscribe:hover {
-  background-color: var(--blue);
-  color: white;
-  transition-duration: 0.2s;
-  box-shadow: 0 0 20px 0.1px var(--blue);
-}
-
-.tabs-item:hover {
-  background-color: #202222;
-}
-
-span:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
+}/*# sourceMappingURL=main.css.map */

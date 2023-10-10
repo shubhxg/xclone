@@ -1,0 +1,76 @@
+/* hover states --------------------------------------------------------- */
+.tab2 span:hover {
+  color: #acaeb6;
+}
+
+.load-more:hover {
+  background-color: #101010;
+  cursor: pointer;
+}
+
+.new-post-button:hover {
+  box-shadow: 0px 0px 100px 3px $blue;
+}
+
+.comments-icon:hover,
+.comments-icon~span:hover,
+.views-icon:hover,
+.home-icon:hover,
+.msg-icon:hover {
+  fill: $blue;
+  color: $blue;
+  box-shadow: 0px 0px 100px 10px $blue;
+}
+
+.retweet-icon:hover,
+.retweet-icon~span:hover,
+.search-icon:hover,
+.community-icon:hover {
+  fill: $green;
+  color: $green;
+  box-shadow: 0px 0px 120px 15px $green;
+}
+
+.like-icon:hover,
+.like-icon~span:hover,
+.noti-icon:hover {
+  fill: $red;
+  color: $red;
+  box-shadow: 0px 0px 70px 5px $red;
+}
+
+.share-icon:hover {
+  fill: $orange;
+  box-shadow: 0px 0px 70px 5px $orange;
+}
+
+.post-text-container:hover {
+  cursor: pointer;
+}
+
+.post-stats-container:hover {
+  border-radius: 6px;
+  background-color: #101010;
+}
+
+.container-explore:hover {
+  background-color: #212121;
+}
+
+.postbtn:hover,
+.leftbutton:hover,
+.subscribe:hover {
+  background-color: $blue;
+  color: white;
+  transition-duration: 0.2s;
+  box-shadow: 0 0 20px 0.1px $blue;
+}
+
+.tabs-item:hover {
+  background-color: #202222;
+}
+
+span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
